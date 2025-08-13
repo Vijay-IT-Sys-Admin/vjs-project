@@ -1,0 +1,5 @@
+# git ignore the .sh file
+*.sh
+
+# git ignore the .log file 
+*.log
