@@ -1,17 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Deploy Project</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+        }
+        main p {
+            max-width: 800px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 600px) {
+            main p {
+                font-size: 1rem;
+                padding: 15px;
+            }
+            header {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
-    <h1>Welcome to the Auto-Deploy Demo</h1>
-    <h1>Hello World</h1>
-    <h1>new Line added</h1>
-    <p>
-        This project automatically checks GitHub every minute for updates.
-        When a change is detected, the code is pulled, a new Docker image is built,
-        and the container is restarted on port 80 — all without manual intervention.
-    </p>
+<body>
+    <header>🚀 Auto Deploy Project</header>
+    <main>
+        <p>
+            This project automatically checks GitHub for updates every minute.  
+            When a change is detected, the code is pulled, a new Docker image is built,  
+            and the container is restarted on port 80 — all without manual intervention.  
+            This ensures rapid and seamless deployment with minimal downtime.
+        </p>
+    </main>
+    <footer>© 2025 Auto Deploy Demo | Powered by Docker & GitHub</footer>
 </body>
 </html>
 
